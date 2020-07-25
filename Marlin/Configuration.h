@@ -1026,7 +1026,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-//#define NOZZLE_TO_PROBE_OFFSET { -25, 0, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -23, 0, 0 }
 
 // ANET A8: FRONT-MOUNTED SENSOR WITH 3D PRINTED MOUNT
 //#define NOZZLE_TO_PROBE_OFFSET { -28, -45, 0 }
