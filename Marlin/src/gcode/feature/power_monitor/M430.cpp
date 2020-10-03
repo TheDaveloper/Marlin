@@ -1,6 +1,6 @@
 /**
  * Marlin 3D Printer Firmware
- * Copyright (C) 2019 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ * Copyright (C) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
  * Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
@@ -38,7 +38,7 @@
  */
 void GcodeSuite::M430() {
   bool do_report = true;
-  #if HAS_SPI_LCD
+  #if HAS_WIRED_LCD
     #if ENABLED(POWER_MONITOR_CURRENT)
       if (parser.seen('I')) { power_monitor.set_current_display(parser.value_bool()); do_report = false; }
     #endif
